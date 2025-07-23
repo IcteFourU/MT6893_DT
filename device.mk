@@ -156,7 +156,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor:64 \
     android.hardware.memtrack-service.mediatek-mali \
-    android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore \
     vndservicemanager \
@@ -234,7 +233,6 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster-V3-ndk_platform.vendor \
    android.hardware.keymaster@3.0.vendor \
    android.hardware.keymaster@4.0.vendor \
    android.hardware.keymaster@4.1.vendor \
