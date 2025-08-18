@@ -110,12 +110,12 @@ int main() {
         int state = read_tristate();
         printf("State %d\n", state);
         if (state == 1) {
-            system("service call audio 48 i32 0 s16 android");
+            system("service call audio 49 i32 0 s16 android");
         } else if (state == 2) {
-            system("service call audio 48 i32 1 s16 android");
+            system("service call audio 49 i32 1 s16 android");
             vibrationHandler("short");
         } else if (state == 3 && last_state != state) {
-            system("service call audio 48 i32 2 s16 android");
+            system("service call audio 49 i32 2 s16 android");
             vibrationHandler("long");
         }
         last_state = state;
