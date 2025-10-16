@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+#
+
 
 DEVICE_PATH := device/oplus/MT6893
 
@@ -546,6 +548,9 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+#LMKD test
+PRODUCT_PACKAGES += lmkd
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/MT6893/MT6893-vendor.mk)
