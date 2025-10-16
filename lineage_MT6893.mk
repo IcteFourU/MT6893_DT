@@ -34,3 +34,32 @@ PRODUCT_MANUFACTURER := Oplus
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES := BuildDesc=$(call normalize-path-list, "sys_mssi_64_cn_armv82-user-13-TP1A.220905.001-1677828988354-release-keys")
 PRODUCT_GMS_CLIENTID_BASE := android-oplus
+
+TARGET_DISABLE_EPPE := true
+
+
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 32
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := IcteFourU
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Mediatek_Dimensity_1200
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := true
+
+PERF_ANIM_OVERRIDE := true
+
+TARGET_INCLUDE_ACCORD := false
+
+TARGET_HAS_UDFPS := true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.perf.scroll_opt=true \
+    persist.sys.perf.scroll_opt.heavy_app=2
