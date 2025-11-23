@@ -37,6 +37,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oplus
 
 TARGET_DISABLE_EPPE := true
 
+ifneq ($(WITH_GMS),true)
+TARGET_INCLUDES_LOS_PREBUILTS := true
+endif
 
 # Camera information (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 50
