@@ -545,12 +545,12 @@ PRODUCT_PACKAGES += \
     libprocessgroup_shim \
     libshim
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 #LMKD test
 PRODUCT_PACKAGES += lmkd
+=======
+# ADB Root
+PRODUCT_PACKAGES += \
+    adb_root
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/MT6893/MT6893-vendor.mk)
