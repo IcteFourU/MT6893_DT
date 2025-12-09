@@ -65,4 +65,5 @@ TARGET_HAS_UDFPS := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.perf.scroll_opt=true \
-    persist.sys.perf.scroll_opt.heavy_app=2
+    persist.sys.perf.scroll_opt.heavy_app=2 \ 
+    persist.sys.ax_debug_enabled=1
