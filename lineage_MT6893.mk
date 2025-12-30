@@ -62,6 +62,7 @@ PERF_ANIM_OVERRIDE := true
 TARGET_INCLUDE_ACCORD := false
 
 TARGET_HAS_UDFPS := true
+TORCH_STR_SUPPORTED := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.perf.scroll_opt=true \
