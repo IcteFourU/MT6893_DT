@@ -243,6 +243,9 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_MT6893)
 # UDFPS
 $(call soong_config_set,surfaceflinger,udfps_lib,//$(DEVICE_PATH):libudfps_extension.MT6893)
 
+#Disable bypass charging
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+
 PRODUCT_PACKAGES += \
    init_MT6893_vendor
 
